@@ -1,0 +1,24 @@
+{
+  "name": "alexa-tv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab test/functional.test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "alexa-app": "^2.3.4",
+    "boom": "^4.2.0",
+    "hapi": "^16.0.2",
+    "hoek": "^4.1.0",
+    "joi": "^10.1.0"
+  },
+  "devDependencies": {
+    "code": "^4.0.0",
+    "inject-then": "^2.0.7",
+    "lab": "^11.2.1",
+    "standard": "^8.6.0"
+  }
+}

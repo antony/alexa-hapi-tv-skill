@@ -1,0 +1,15 @@
+{
+  "type": "IntentRequest",
+  "requestId": "string",
+  "timestamp": "string",
+  "locale": "string",
+  "intent": {
+    "name": "tv",
+    "slots": {
+      "State": {
+        "name": "State",
+        "value": "on"
+      }
+    }
+  }
+}
