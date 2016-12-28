@@ -13,7 +13,7 @@ const AlexaPlugin = {
     app.intent('tv',
       {
         slots: { State: 'states' },
-        utterances: [ 'turn the tv {states|State}' ]
+        utterances: [ 'to turn the tv {states|State}' ]
       },
       (request, response) => {
         const state = request.slot('State')
