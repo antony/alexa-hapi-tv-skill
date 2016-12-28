@@ -17,7 +17,7 @@ server.register([
 
   console.log(`Server running at: ${server.info.uri}`)
 
-  if (module.parent) {
+  if (!module.parent) {
     server.start((err) => {
       Hoek.assert(!err, err)
     })
