@@ -7,7 +7,7 @@ const injectThen = require('inject-then')
 const alexaPlugin = require('./src/plugin/alexa')
 
 const server = new Hapi.Server()
-server.connection({ port: 3000 })
+server.connection({ port: process.env.PORT || 3000 })
 
 server.register([
   injectThen,
