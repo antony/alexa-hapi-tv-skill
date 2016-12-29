@@ -4,7 +4,7 @@ const Alexa = require('alexa-app')
 
 const AlexaPlugin = {
   register: function (server, options, next) {
-    const app = new Alexa.app('sample')
+    const app = new Alexa.app('barney')
 
     app.dictionary = {
       states: ['on', 'off']
@@ -13,11 +13,11 @@ const AlexaPlugin = {
     app.intent('tv',
       {
         slots: { State: 'states' },
-        utterances: [ 'to put the tv {states|State}' ]
+        utterances: [ 'to put the telly {states|State}' ]
       },
       (request, response) => {
         const state = request.slot('State')
-        response.say(`You asked for the tv to be turned ${state}`)
+        response.say(`You asked for the telly to be turned ${state}`)
       }
     )
 
