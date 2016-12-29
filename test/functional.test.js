@@ -31,7 +31,7 @@ describe('alexa-tv', () => {
         .to(server, server.info.uri + '/')
         .then((output) => {
           expect(output.statusCode).to.equal(200)
-          expect(output.result.response.outputSpeech.ssml).to.equal('<speak>You asked for the tv to be turned on</speak>')
+          expect(output.result.response.outputSpeech.ssml).to.equal('<speak>You asked for the telly to be turned on</speak>')
         })
     })
   })

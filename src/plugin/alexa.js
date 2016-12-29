@@ -17,7 +17,8 @@ const AlexaPlugin = {
       },
       (request, response) => {
         const state = request.slot('State')
-        response.say(`You asked for the telly to be turned ${state}`)
+        if (!state) { return response.say('You need to tell me to turn the telly on or off') }
+        return response.say(`You asked for the telly to be turned ${state}`)
       }
     )
 

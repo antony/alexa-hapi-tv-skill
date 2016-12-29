@@ -20,5 +20,5 @@ class AlexaRequestBuilder {
 }
 
 module.exports = {
-  withIntent: () => { return new AlexaRequestBuilder(intentPayload) } 
+  withIntent: () => { return new AlexaRequestBuilder(intentPayload) }
 }
